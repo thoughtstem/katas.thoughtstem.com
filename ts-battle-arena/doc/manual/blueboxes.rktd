@@ -5,6 +5,8 @@ procedure
 value
 witch-sprite : animated-sprite?
 value
+caitsith-sprite : animated-sprite?
+value
 darkelf-sprite : animated-sprite?
 value
 wizard-sprite : animated-sprite?
@@ -14,6 +16,8 @@ value
 madscientist-sprite : animated-sprite?
 value
 lightelf-sprite : animated-sprite?
+value
+caitsith-sprite : animated-sprite?
 value
 darkknight-sprite : animated-sprite?
 value
