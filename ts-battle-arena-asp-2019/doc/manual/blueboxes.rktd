@@ -51,6 +51,8 @@ darkelf-sheet : image?
 value
 darkknight-sheet : image?
 value
+dragon-sheet : image?
+value
 kavi-sheet : image?
 value
 lightelf-sheet : image?
