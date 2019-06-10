@@ -1,49 +1,153 @@
 33
 ((3) 0 () 0 () () (h ! (equal)))
 value
-bigmario01-sprite : animated-sprite?
+mario-sprite : animated-sprite?
 value
-bigmario02-sprite : animated-sprite?
+luigi-sprite : animated-sprite?
 value
-bigmario03-sprite : animated-sprite?
+princesspeach-sprite : animated-sprite?
 value
-bigmario04-sprite : animated-sprite?
+toad-sprite : animated-sprite?
 value
-bigmario05-sprite : animated-sprite?
+yoshi-sprite : animated-sprite?
 value
-bigmario06-sprite : animated-sprite?
+redyoshi-sprite : animated-sprite?
 value
-bigmario07-sprite : animated-sprite?
+bigmario-sprite : animated-sprite?
 value
-bigmario08-sprite : animated-sprite?
+orangebigmario-sprite : animated-sprite?
 value
-bigmario09-sprite : animated-sprite?
+bluebigmario-sprite : animated-sprite?
 value
-bigmario10-sprite : animated-sprite?
+greybigmario-sprite : animated-sprite?
 value
-bigmario11-sprite : animated-sprite?
+smallmario-sprite : animated-sprite?
 value
-smallmario01-sprite : animated-sprite?
+orangesmallmario-sprite : animated-sprite?
 value
-smallmario02-sprite : animated-sprite?
+bluesmallmario-sprite : animated-sprite?
 value
-smallmario03-sprite : animated-sprite?
+greysmallmario-sprite : animated-sprite?
 value
-smallmario04-sprite : animated-sprite?
+blooper-sprite : animated-sprite?
 value
-smallmario05-sprite : animated-sprite?
+blueblooper-sprite : animated-sprite?
 value
-smallmario06-sprite : animated-sprite?
+orangeblooper-sprite : animated-sprite?
 value
-smallmario07-sprite : animated-sprite?
+greyblooper-sprite : animated-sprite?
 value
-smallmario08-sprite : animated-sprite?
+bowser-sprite : animated-sprite?
 value
-smallmario09-sprite : animated-sprite?
+bluebowser-sprite : animated-sprite?
 value
-smallmario10-sprite : animated-sprite?
+orangebowser-sprite : animated-sprite?
 value
-smallmario11-sprite : animated-sprite?
+greybowser-sprite : animated-sprite?
+value
+buzzy-sprite : animated-sprite?
+value
+bluebuzzy-sprite : animated-sprite?
+value
+orangebuzzy-sprite : animated-sprite?
+value
+greybuzzy-sprite : animated-sprite?
+value
+cheep-sprite : animated-sprite?
+value
+bluecheep-sprite : animated-sprite?
+value
+orangecheep-sprite : animated-sprite?
+value
+greycheep-sprite : animated-sprite?
+value
+goomba-sprite : animated-sprite?
+value
+bluegoomba-sprite : animated-sprite?
+value
+orangegoomba-sprite : animated-sprite?
+value
+greygoomba-sprite : animated-sprite?
+value
+lakitu-sprite : animated-sprite?
+value
+bluelakitu-sprite : animated-sprite?
+value
+orangelakitu-sprite : animated-sprite?
+value
+greylakitu-sprite : animated-sprite?
+value
+paratroopa-sprite : animated-sprite?
+value
+blueparatroopa-sprite : animated-sprite?
+value
+orangeparatroopa-sprite : animated-sprite?
+value
+greyparatroopa-sprite : animated-sprite?
+value
+piranha-sprite : animated-sprite?
+value
+bluepiranha-sprite : animated-sprite?
+value
+orangepiranha-sprite : animated-sprite?
+value
+greypiranha-sprite : animated-sprite?
+value
+spiny-sprite : animated-sprite?
+value
+bluespiny-sprite : animated-sprite?
+value
+orangespiny-sprite : animated-sprite?
+value
+greyspiny-sprite : animated-sprite?
+value
+troopa-sprite : animated-sprite?
+value
+bluetroopa-sprite : animated-sprite?
+value
+orangetroopa-sprite : animated-sprite?
+value
+greytroopa-sprite : animated-sprite?
+value
+pinkblock-sprite : animated-sprite?
+value
+blueblock-sprite : animated-sprite?
+value
+orangeblock-sprite : animated-sprite?
+value
+greyblock-sprite : animated-sprite?
+value
+pinkbrick-sprite : animated-sprite?
+value
+bluebrick-sprite : animated-sprite?
+value
+orangebrick-sprite : animated-sprite?
+value
+greybrick-sprite : animated-sprite?
+value
+pinkfence-sprite : animated-sprite?
+value
+bluefence-sprite : animated-sprite?
+value
+orangefence-sprite : animated-sprite?
+value
+greyfence-sprite : animated-sprite?
+value
+pinkpipe-sprite : animated-sprite?
+value
+bluepipe-sprite : animated-sprite?
+value
+orangepipe-sprite : animated-sprite?
+value
+greypipe-sprite : animated-sprite?
+value
+pinkquestion-sprite : animated-sprite?
+value
+bluequestion-sprite : animated-sprite?
+value
+orangequestion-sprite : animated-sprite?
+value
+greyquestion-sprite : animated-sprite?
 procedure
 (random-character-sprite) -> animated-sprite?
 value
@@ -65,9 +169,9 @@ bat-sprite : animated-sprite?
 value
 cat-sprite : animated-sprite?
 value
-black-cat-sprite : animated-sprite?
+blackcat-sprite : animated-sprite?
 value
-white-cat-sprite : animated-sprite?
+whitecat-sprite : animated-sprite?
 value
 snake-sprite : animated-sprite?
 value
@@ -77,33 +181,33 @@ apples-sprite : animated-sprite?
 value
 carrot-sprite : animated-sprite?
 value
-carrot-stew-sprite : animated-sprite?
+carrotstew-sprite : animated-sprite?
 value
-toasted-marshmallow-sprite : animated-sprite?
+toastedmarshmallow-sprite : animated-sprite?
 value
 smores-sprite : animated-sprite?
 value
 fish-sprite : animated-sprite?
 value
-cooked-fish-sprite : animated-sprite?
+cookedfish-sprite : animated-sprite?
 value
-fish-stew-sprite : animated-sprite?
+fishstew-sprite : animated-sprite?
 value
 cherry-sprite : animated-sprite?
 value
 steak-sprite : animated-sprite?
 value
-copper-coin-sprite : animated-sprite?
+coppercoin-sprite : animated-sprite?
 value
-silver-coin-sprite : animated-sprite?
+silvercoin-sprite : animated-sprite?
 value
-gold-coin-sprite : animated-sprite?
+goldcoin-sprite : animated-sprite?
 value
 cauldron-sprite : animated-sprite?
 value
 campfire-sprite : animated-sprite?
 value
-wood-table-sprite : animated-sprite?
+woodtable-sprite : animated-sprite?
 value
 chest-sprite : animated-sprite?
 value
@@ -119,44 +223,86 @@ LAVA-BG : image?
 value
 PINK-BG : image?
 value
-cinderella2 : image?
+pine-tree : entity?
 value
-darkelf-sheet : image?
+round-tree : entity?
 value
-darkknight : image?
+snow-pine-tree : entity?
 value
-dragon-sheet : image?
+candy-cane-tree : entity?
 value
-leviathan : image?
+stone-house : entity?
 value
-lightelf-sheet : image?
+wood-house : entity?
 value
-madscientist-sheet : image?
+brick-house : entity?
 value
-monk-sheet : image?
+random-barrels : entity?
 value
-mystery-sheet : image?
+barrel : entity?
 value
-phoenix : image?
+barrels : entity?
 value
-pirate-sheet : image?
+random-brown-rock : entity?
 value
-pirate_m2 : image?
+large-brown-rock : entity?
 value
-pirategirl2 : image?
+medium-brown-rock : entity?
 value
-prince : image?
+small-brown-rock : entity?
 value
-redxiii : image?
+random-gray-rock : entity?
 value
-steampunk_f4 : image?
+large-gray-rock : entity?
 value
-steampunk_m4 : image?
+medium-gray-rock : entity?
 value
-witch-sheet : image?
-value
-wizard-sheet : image?
+small-gray-rock : entity?
 value
 bigmario-sheet : image?
 value
+block-sheet : image?
+value
+blooper-sheet : image?
+value
+bowser-sheet : image?
+value
+brick-sheet : image?
+value
+buzzy-sheet : image?
+value
+cheep-sheet : image?
+value
+fence-sheet : image?
+value
+goomba-sheet : image?
+value
+greenmushroom-sheet : image?
+value
+lakitu-sheet : image?
+value
+luigi-sheet : image?
+value
+mario-sheet : image?
+value
+paratroopa-sheet : image?
+value
+pipe-sheet : image?
+value
+piranha-sheet : image?
+value
+princesspeach-sheet : image?
+value
+question-sheet : image?
+value
+redmushroom-sheet : image?
+value
 smallmario-sheet : image?
+value
+spiny-sheet : image?
+value
+toad-sheet : image?
+value
+troopa-sheet : image?
+value
+yoshi-sheet : image?

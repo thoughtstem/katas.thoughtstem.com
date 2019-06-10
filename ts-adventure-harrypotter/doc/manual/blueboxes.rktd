@@ -23,9 +23,9 @@ bat-sprite : animated-sprite?
 value
 cat-sprite : animated-sprite?
 value
-black-cat-sprite : animated-sprite?
+blackcat-sprite : animated-sprite?
 value
-white-cat-sprite : animated-sprite?
+whitecat-sprite : animated-sprite?
 value
 snake-sprite : animated-sprite?
 value
@@ -35,33 +35,33 @@ apples-sprite : animated-sprite?
 value
 carrot-sprite : animated-sprite?
 value
-carrot-stew-sprite : animated-sprite?
+carrotstew-sprite : animated-sprite?
 value
-toasted-marshmallow-sprite : animated-sprite?
+toastedmarshmallow-sprite : animated-sprite?
 value
 smores-sprite : animated-sprite?
 value
 fish-sprite : animated-sprite?
 value
-cooked-fish-sprite : animated-sprite?
+cookedfish-sprite : animated-sprite?
 value
-fish-stew-sprite : animated-sprite?
+fishstew-sprite : animated-sprite?
 value
 cherry-sprite : animated-sprite?
 value
 steak-sprite : animated-sprite?
 value
-copper-coin-sprite : animated-sprite?
+coppercoin-sprite : animated-sprite?
 value
-silver-coin-sprite : animated-sprite?
+silvercoin-sprite : animated-sprite?
 value
-gold-coin-sprite : animated-sprite?
+goldcoin-sprite : animated-sprite?
 value
 cauldron-sprite : animated-sprite?
 value
 campfire-sprite : animated-sprite?
 value
-wood-table-sprite : animated-sprite?
+woodtable-sprite : animated-sprite?
 value
 chest-sprite : animated-sprite?
 value
@@ -77,42 +77,62 @@ LAVA-BG : image?
 value
 PINK-BG : image?
 value
-cinderella2 : image?
+pine-tree : entity?
 value
-darkelf-sheet : image?
+round-tree : entity?
 value
-darkknight : image?
+snow-pine-tree : entity?
 value
-dragon-sheet : image?
+candy-cane-tree : entity?
 value
-leviathan : image?
+stone-house : entity?
 value
-lightelf-sheet : image?
+wood-house : entity?
 value
-madscientist-sheet : image?
+brick-house : entity?
 value
-monk-sheet : image?
+random-barrels : entity?
 value
-mystery-sheet : image?
+barrel : entity?
 value
-phoenix : image?
+barrels : entity?
 value
-pirate-sheet : image?
+random-brown-rock : entity?
 value
-pirate_m2 : image?
+large-brown-rock : entity?
 value
-pirategirl2 : image?
+medium-brown-rock : entity?
 value
-prince : image?
+small-brown-rock : entity?
 value
-redxiii : image?
+random-gray-rock : entity?
 value
-steampunk_f4 : image?
+large-gray-rock : entity?
 value
-steampunk_m4 : image?
+medium-gray-rock : entity?
 value
-witch-sheet : image?
+small-gray-rock : entity?
 value
-wizard-sheet : image?
+bluepotion-sprite : image?
+value
+cauldron-sheet : image?
+value
+flyingbook-sheet : image?
+value
+hagrid-sheet : image?
+value
+harrypotter-sheet-123 : image?
 value
 harrypotter-sheet : image?
+value
+oldwizard-sheet : image?
+value
+potion-sprite : image?
+value
+pumpkin-sheet : image?
+value
+snape-sheet : image?
+value
+tentacula-sheet : image?
+value
+yellowpotion-sprite : image?

@@ -21,9 +21,9 @@ bat-sprite : animated-sprite?
 value
 cat-sprite : animated-sprite?
 value
-black-cat-sprite : animated-sprite?
+blackcat-sprite : animated-sprite?
 value
-white-cat-sprite : animated-sprite?
+whitecat-sprite : animated-sprite?
 value
 snake-sprite : animated-sprite?
 value
@@ -33,33 +33,33 @@ apples-sprite : animated-sprite?
 value
 carrot-sprite : animated-sprite?
 value
-carrot-stew-sprite : animated-sprite?
+carrotstew-sprite : animated-sprite?
 value
-toasted-marshmallow-sprite : animated-sprite?
+toastedmarshmallow-sprite : animated-sprite?
 value
 smores-sprite : animated-sprite?
 value
 fish-sprite : animated-sprite?
 value
-cooked-fish-sprite : animated-sprite?
+cookedfish-sprite : animated-sprite?
 value
-fish-stew-sprite : animated-sprite?
+fishstew-sprite : animated-sprite?
 value
 cherry-sprite : animated-sprite?
 value
 steak-sprite : animated-sprite?
 value
-copper-coin-sprite : animated-sprite?
+coppercoin-sprite : animated-sprite?
 value
-silver-coin-sprite : animated-sprite?
+silvercoin-sprite : animated-sprite?
 value
-gold-coin-sprite : animated-sprite?
+goldcoin-sprite : animated-sprite?
 value
 cauldron-sprite : animated-sprite?
 value
 campfire-sprite : animated-sprite?
 value
-wood-table-sprite : animated-sprite?
+woodtable-sprite : animated-sprite?
 value
 chest-sprite : animated-sprite?
 value
@@ -74,19 +74,3 @@ value
 LAVA-BG : image?
 value
 PINK-BG : image?
-value
-darkelf-sheet : image?
-value
-lightelf-sheet : image?
-value
-madscientist-sheet : image?
-value
-monk-sheet : image?
-value
-mystery-sheet : image?
-value
-pirate-sheet : image?
-value
-witch-sheet : image?
-value
-wizard-sheet : image?
