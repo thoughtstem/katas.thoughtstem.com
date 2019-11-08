@@ -10,7 +10,6 @@
         #:absolute-links? #t
         "Kata Collections"
         (~a 
-          (collection-link 'K2 "K-2nd Languages" #:link-path "K2/index.html")
-          (collection-link 'GE "3rd+ Languages" #:link-path "GE/index.html")     
-          (collection-link 'VR "VR Languages" #:link-path "VR/index.html")
+          (collection-link 'GE "2D Games" #:link-path "GE/index.html")     
+          (collection-link 'VR "3D (coming soon)" #:link-path "VR/index.html")
           )))))
