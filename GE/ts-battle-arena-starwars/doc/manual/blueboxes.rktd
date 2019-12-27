@@ -78,37 +78,3 @@ value
 LAVA-BG : image?
 value
 PINK-BG : image?
-value
-bobafett-sheet : image?
-value
-c2po-sheet : image?
-value
-c3po-sheet : image?
-value
-chewie-sheet : image?
-value
-darthmaul-sheet : image?
-value
-darthvader-sheet : image?
-value
-hansolo-sheet : image?
-value
-lando-sheet : image?
-value
-luke-sheet : image?
-value
-obiwan-sheet : image?
-value
-padawan-sheet : image?
-value
-princessleia-sheet : image?
-value
-r2d2-sheet : image?
-value
-rebelpilot-sheet : image?
-value
-stormtrooper-sheet : image?
-value
-twilek-sheet : image?
-value
-yoda-sheet : image?

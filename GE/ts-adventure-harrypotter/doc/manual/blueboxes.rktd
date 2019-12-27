@@ -2,6 +2,22 @@
 ((3) 0 () 0 () () (h ! (equal)))
 value
 harrypotter-sprite : animated-sprite?
+value
+flyingbook-sprite : animated-sprite?
+value
+pumpkin-sprite : animated-sprite?
+value
+magiccauldron-sprite : animated-sprite?
+value
+snape-sprite : animated-sprite?
+value
+tentacula-sprite : animated-sprite?
+value
+hagrid-sprite : animated-sprite?
+value
+oldwizard-sprite : animated-sprite?
+value
+potion-sprite : animated-sprite?
 procedure
 (random-character-sprite) -> animated-sprite?
 value
@@ -112,27 +128,3 @@ value
 medium-gray-rock : entity?
 value
 small-gray-rock : entity?
-value
-bluepotion-sprite : image?
-value
-cauldron-sheet : image?
-value
-flyingbook-sheet : image?
-value
-hagrid-sheet : image?
-value
-harrypotter-sheet-123 : image?
-value
-harrypotter-sheet : image?
-value
-oldwizard-sheet : image?
-value
-potion-sprite : image?
-value
-pumpkin-sheet : image?
-value
-snape-sheet : image?
-value
-tentacula-sheet : image?
-value
-yellowpotion-sprite : image?

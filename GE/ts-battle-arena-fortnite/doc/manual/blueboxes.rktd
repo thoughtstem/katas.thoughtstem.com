@@ -54,13 +54,3 @@ value
 LAVA-BG : image?
 value
 PINK-BG : image?
-value
-cecil-sheet : image?
-value
-constructor-sheet : image?
-value
-ninja-sheet : image?
-value
-outlander-sheet : image?
-value
-soldier-sheet : image?
