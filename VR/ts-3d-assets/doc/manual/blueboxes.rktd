@@ -1,18 +1,6 @@
 33
 ((3) 0 () 0 () () (h ! (equal)))
 value
-dragon-image : image?
-value
-earth-bg : image?
-value
-mercury-bg : image?
-value
-moon-bg : image?
-value
-sun-bg : image?
-value
-venus-bg : image?
-value
 alien-plant-1 : entity?
 value
 baby-cactus : entity?
