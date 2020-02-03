@@ -15,7 +15,7 @@ blastoise-sprite : animated-sprite?
 value
 charmander-sprite : animated-sprite?
 value
-charmelon-sprite : animated-sprite?
+charmeleon-sprite : animated-sprite?
 value
 charizard-sprite : animated-sprite?
 value
