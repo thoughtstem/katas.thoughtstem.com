@@ -10,7 +10,7 @@ procedure
               more-objects ...)       -> any/c
   speed : positive? = 750
   fly-mode : boolean? = #t
-  start : position-attribute? = (position01.630)
+  start : position-attribute? = (position 0 1.6 30)
   universe : (listof entity?) = (basic-universe)
   star : entity? = '()
   objects : list? = '()
@@ -50,22 +50,35 @@ procedure
              #:on-mouse-leave mouse-leave          
              #:on-mouse-click mouse-click          
              #:objects-list c-list])           -> entity?
-  pos : object? = (position000)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c
-          = (first(shuffle(list(tint-img'brownsun-tex)(tint-img'redsun-tex)(tint-img'darkredsun-tex)(tint-img'lightredsun-tex)(tint-img'orangesun-tex)(tint-img'darkorangesun-tex)(tint-img'lightorangesun-tex)(tint-img'yellowsun-tex)(tint-img'darkyellowsun-tex)(tint-img'lightyellowsun-tex)(tint-img'salmonsun-tex)(tint-img'purplesun-tex)(tint-img'whitesun-tex)sun-tex)))
-  r : real? = (random815)
-  ld : real? = (*r35.0)
+          = (first (shuffle (list (tint-img 'brown sun-tex)
+                                  (tint-img 'red sun-tex)
+                                  (tint-img 'darkred sun-tex)
+                                  (tint-img 'lightred sun-tex)
+                                  (tint-img 'orange sun-tex)
+                                  (tint-img 'darkorange sun-tex)
+                                  (tint-img 'lightorange sun-tex)
+                                  (tint-img 'yellow sun-tex)
+                                  (tint-img 'darkyellow sun-tex)
+                                  (tint-img 'lightyellow sun-tex)
+                                  (tint-img 'salmon sun-tex)
+                                  (tint-img 'purple sun-tex)
+                                  (tint-img 'white sun-tex)
+                                  sun-tex)))
+  r : real? = (random 8 15)
+  ld : real? = (* r 35.0)
   opac : between-0-1-inclusive? = 1.0
   orbits? : boolean? = #f
   l : (or/c boolean? string?) = #f
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(y-rotation))
+                  = (do-many (y-rotation))
   p-list : (or/c empty? (listof entity?)) = '()
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
@@ -79,11 +92,11 @@ procedure
              #:color c             
              #:texture texture     
              #:shader sha])    -> entity?
-  tilt : object? = (tilt000)
-  rad : real? = (random-float0.251.5#:factor100)
-  rt : real? = (random-float0.22.0#:factor1000)
+  tilt : object? = (tilt 0 0 0)
+  rad : real? = (random-float 0.25 1.5 #:factor 100)
+  rt : real? = (random-float 0.2 2.0 #:factor 1000)
   opa : between-0-1-inclusive?
-      = (random-float0.251.0#:factor100)
+      = (random-float 0.25 1.0 #:factor 100)
   c : (or/c #f string? symbol? object?) = #f
   texture : any/c = #f
   sha : string? = "standard"
@@ -108,23 +121,30 @@ procedure
                #:on-mouse-click mouse-click          
                #:objects-list c-list])           -> entity?
   pos : object?
-      = (position(random-range2575)0(random-range2575))
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
-  texture : any/c
-          = (first(shuffle(listmercury-texvenus-texearth-texearthnight-texmars-texjupiter-texsaturn-texuranus-texneptune-tex)))
-  r : real? = (random15)
+      = (position (random-range 25 75) 0 (random-range 25 75))
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
+  texture : any/c = (first (shuffle (list mercury-tex
+                                          venus-tex
+                                          earth-tex
+                                          earthnight-tex
+                                          mars-tex
+                                          jupiter-tex
+                                          saturn-tex
+                                          uranus-tex
+                                          neptune-tex)))
+  r : real? = (random 1 5)
   opac : between-0-1-inclusive? = 1.0
   r-list : (or/c empty? (listof entity?)) = '()
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = #f
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -146,19 +166,20 @@ procedure
              #:on-mouse-leave mouse-leave          
              #:on-mouse-click mouse-click          
              #:objects-list c-list])           -> entity?
-  pos : object? = (position0(random-range712)(random-range712))
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object?
+      = (position 0 (random-range 7 12) (random-range 7 12))
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = moon-tex
-  r : real? = (random-float0.250.75#:factor100)
+  r : real? = (random-float 0.25 0.75 #:factor 100)
   opac : between-0-1-inclusive? = 1.0
   l : (or/c boolean? string?) = #f
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(y-rotation))
+                  = (do-many (y-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -180,20 +201,25 @@ procedure
                  #:on-mouse-leave mouse-leave          
                  #:on-mouse-click mouse-click          
                  #:objects-list c-list])           -> entity?
-  pos : object? = (position0(random-range712)(random-range712))
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object?
+      = (position 0 (random-range 7 12) (random-range 7 12))
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c
-          = (first(shuffle(list(tint-img'brownasteroid-tex)(tint-img'blackasteroid-tex)(tint-img'greyasteroid-tex)(tint-img'whiteasteroid-tex)asteroid-tex)))
-  r : real? = (random-float0.10.3#:factor100)
+          = (first (shuffle (list (tint-img 'brown asteroid-tex)
+                                  (tint-img 'black asteroid-tex)
+                                  (tint-img 'grey asteroid-tex)
+                                  (tint-img 'white asteroid-tex)
+                                  asteroid-tex)))
+  r : real? = (random-float 0.1 0.3 #:factor 100)
   opac : between-0-1-inclusive? = 1.0
   l : (or/c boolean? string?) = #f
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(y-rotation))
+                  = (do-many (y-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -218,21 +244,21 @@ procedure
            #:on-mouse-leave mouse-leave          
            #:on-mouse-click mouse-click          
            #:objects-list c-list])           -> entity?
-  pos : object? = (position00-250)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 -250)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = sun-tex
   r : real? = 109
-  ld : real? = (*r35.0)
+  ld : real? = (* r 35.0)
   opac : between-0-1-inclusive? = 1.0
   orbits? : boolean? = #f
   l : (or/c boolean? string?) = "Sun"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(y-rotation))
+                  = (do-many (y-rotation))
   p-list : (or/c empty? (listof entity?)) = '()
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
@@ -258,10 +284,10 @@ procedure
                  #:on-mouse-leave mouse-leave          
                  #:on-mouse-click mouse-click          
                  #:objects-list c-list])           -> entity?
-  pos : object? = (position002)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 2)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = mercury-tex
   r : real? = 0.38
   opac : between-0-1-inclusive? = 1.0
@@ -269,11 +295,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Mercury"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -298,10 +324,10 @@ procedure
                #:on-mouse-leave mouse-leave          
                #:on-mouse-click mouse-click          
                #:objects-list c-list])           -> entity?
-  pos : object? = (position003)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 3)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = venus-tex
   r : real? = 0.95
   opac : between-0-1-inclusive? = 1.0
@@ -309,11 +335,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Venus"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -338,10 +364,10 @@ procedure
                #:on-mouse-leave mouse-leave          
                #:on-mouse-click mouse-click          
                #:objects-list c-list])           -> entity?
-  pos : object? = (position003)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 3)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = earth-tex
   r : real? = 1
   opac : between-0-1-inclusive? = 1.0
@@ -349,11 +375,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Earth"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -375,19 +401,19 @@ procedure
             #:on-mouse-leave mouse-leave          
             #:on-mouse-click mouse-click          
             #:objects-list c-list])           -> entity?
-  pos : object? = (position002)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 2)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = moon-tex
   r : real? = 0.27
   opac : between-0-1-inclusive? = 1.0
   l : (or/c boolean? string?) = "Moon"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(y-rotation))
+                  = (do-many (y-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -412,10 +438,10 @@ procedure
               #:on-mouse-leave mouse-leave          
               #:on-mouse-click mouse-click          
               #:objects-list c-list])           -> entity?
-  pos : object? = (position003)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 3)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = mars-tex
   r : real? = 0.53
   opac : between-0-1-inclusive? = 1.0
@@ -423,11 +449,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Mars"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)10)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 10)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -452,10 +478,10 @@ procedure
                  #:on-mouse-leave mouse-leave          
                  #:on-mouse-click mouse-click          
                  #:objects-list c-list])           -> entity?
-  pos : object? = (position0023)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 23)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = jupiter-tex
   r : real? = 11.19
   opac : between-0-1-inclusive? = 1.0
@@ -463,11 +489,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Jupiter"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -492,23 +518,27 @@ procedure
                 #:on-mouse-leave mouse-leave          
                 #:on-mouse-click mouse-click          
                 #:objects-list c-list])           -> entity?
-  pos : object? = (position0021)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 21)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = saturn-tex
   r : real? = 9.4
   opac : between-0-1-inclusive? = 1.0
   r-list : (or/c empty? (listof entity?))
-         = (list(basic-ring#:tilt(tilt45900)#:opacity0.8#:texturesaturnring-tex#:radius(-(*r1.55)r)#:thickness(*r0.9)))
+         = (list (basic-ring #:tilt (tilt 45 90 0)
+                             #:opacity 0.8
+                             #:texture saturnring-tex
+                             #:radius (- (* r 1.55) r)
+                             #:thickness (* r 0.9)))
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Saturn"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -533,10 +563,10 @@ procedure
                 #:on-mouse-leave mouse-leave          
                 #:on-mouse-click mouse-click          
                 #:objects-list c-list])           -> entity?
-  pos : object? = (position009)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 9)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = uranus-tex
   r : real? = 4.04
   opac : between-0-1-inclusive? = 1.0
@@ -544,11 +574,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Uranus"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f
@@ -573,10 +603,10 @@ procedure
                  #:on-mouse-leave mouse-leave          
                  #:on-mouse-click mouse-click          
                  #:objects-list c-list])           -> entity?
-  pos : object? = (position009)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (color255255255)
+  pos : object? = (position 0 0 9)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?) = (color 255 255 255)
   texture : any/c = neptune-tex
   r : real? = 3.88
   opac : between-0-1-inclusive? = 1.0
@@ -584,11 +614,11 @@ procedure
   m-list : (or/c empty? (listof entity?)) = '()
   l : (or/c boolean? string?) = "Neptune"
   lc : (or/c string? symbol? object?) = 'white
-  lp : object? = (position0r0)
-  ls : (or/c number? object?) = (scale(*2r)(*2r)1)
+  lp : object? = (position 0 r 0)
+  ls : (or/c number? object?) = (scale (* 2 r) (* 2 r) 1)
   orbits? : boolean? = #f
   animations-list : (or/c empty? (listof object?))
-                  = (do-many(x-rotation))
+                  = (do-many (x-rotation))
   mouse-enter : (or/c #f (listof object?)) = #f
   mouse-leave : (or/c #f (listof object?)) = #f
   mouse-click : (or/c #f (listof object?)) = #f

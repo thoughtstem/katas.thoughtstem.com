@@ -11,8 +11,8 @@ procedure
                     more-objects ...)                -> any/c
   speed : positive? = 300
   fly-mode : boolean? = #t
-  environment : any/c
-              = (basic-environment#:basic?#f#:preset'default)
+  environment : any/c = (basic-environment #:basic? #f
+                                           #:preset 'default)
   ocean : any/c = #f
   stars : any/c = #f
   sky-objects : any/c = '()
@@ -62,13 +62,14 @@ procedure
             #:on-mouse-click mouse-click     
             #:animations-list a-list         
             #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c number? object?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c number? object?) = (make-scale 1.0 1.0 1.0)
   dep : real? = 1.0
   hei : real? = 1.0
   wid : real? = 1.0
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -91,13 +92,14 @@ procedure
              #:on-mouse-click mouse-click     
              #:animations-list a-list         
              #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   radb : real? = 1.0
   radt : real? = 0.01
   hei : real? = 1.0
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -119,12 +121,13 @@ procedure
                  #:on-mouse-click mouse-click     
                  #:animations-list a-list         
                  #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   hei : real? = 1.0
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -145,11 +148,12 @@ procedure
                      #:on-mouse-click mouse-click     
                      #:animations-list a-list         
                      #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -170,11 +174,12 @@ procedure
                     #:on-mouse-click mouse-click     
                     #:animations-list a-list         
                     #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -195,11 +200,12 @@ procedure
                    #:on-mouse-click mouse-click     
                    #:animations-list a-list         
                    #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -221,11 +227,12 @@ procedure
                #:on-mouse-click mouse-click     
                #:animations-list a-list         
                #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 1.0
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   sha : (or/c string? symbol?) = "standard"
@@ -247,11 +254,12 @@ procedure
                     #:on-mouse-click mouse-click     
                     #:animations-list a-list         
                     #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -273,12 +281,13 @@ procedure
               #:on-mouse-click mouse-click     
               #:animations-list a-list         
               #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
   rt : real? = 0.3
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -303,15 +312,16 @@ procedure
              #:on-mouse-click mouse-click     
              #:animations-list a-list         
              #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   val : string? = "Hello, World!"
   ali : (or/c 'center 'left 'right) = 'center
   bas : (or/c 'top 'center 'bottom) = 'center
   font : symbol? = 'roboto
   space : real? = 1
-  col : (or/c string? symbol? object?) = (make-color255255255)
+  col : (or/c string? symbol? object?)
+      = (make-color 255 255 255)
   opac : between-0-1-inclusive? = 1.0
   side : (or/c 'front 'back 'double) = 'double
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -332,11 +342,12 @@ procedure
                #:on-mouse-click mouse-click     
                #:animations-list a-list         
                #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   r : real? = 0.5
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -358,10 +369,11 @@ procedure
               #:height hei                     
               #:width wid                      
               #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -386,10 +398,11 @@ procedure
              #:on-mouse-click mouse-click     
              #:animations-list a-list         
              #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   radi : real? = 0.8
   rado : real? = 1.2
   opac : between-0-1-inclusive? = 1.0
@@ -412,10 +425,11 @@ procedure
                  #:on-mouse-click mouse-click     
                  #:animations-list a-list         
                  #:components-list c])        -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
-  col : (or/c string? symbol? object?) = (make-color128128128)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
+  col : (or/c string? symbol? object?)
+      = (make-color 128 128 128)
   opac : between-0-1-inclusive? = 1.0
   tex : (or/c string? h:image?) = ""
   mouse-enter : (or/c #f (listof object?)) = #f
@@ -430,9 +444,9 @@ procedure
            #:model model                
            #:animations-list a-list     
            #:components-list c])    -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   model : string? = ""
   a-list : (or/c empty? (listof object?)) = '()
   c : (or/c empty? (listof entity?)) = '()
@@ -446,9 +460,9 @@ procedure
               #:radius rad         
               #:star-size size     
               #:texture tex])  -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   col : (or/c string? symbol? object?) = "white"
   count : real? = 10000
   depth : real? = 180
@@ -468,13 +482,13 @@ procedure
               #:speed spe                      
               #:speed-variance spe-var         
               #:width wid])                -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation-90.00.00.0)
-  sca : (or/c object? number?) = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation -90.0 0.0 0.0)
+  sca : (or/c object? number?) = (make-scale 1.0 1.0 1.0)
   amp : real? = 0.1
   amp-var : real? = 0.3
   col : (or/c string? symbol? object?)
-      = (make-color(random256)(random256)(random256))
+      = (make-color (random 256) (random 256) (random 256))
   den : real? = 10
   dep : real? = 10
   opac : between-0-1-inclusive? = 0.8
@@ -493,9 +507,9 @@ procedure
                   #:color col             
                   #:count count           
                   #:posn-spread spr]) -> entity?
-  posn : object? = (position0.00.00.0)
-  rota : object? = (rotation0.00.00.0)
-  scale : object? = (make-scale1.01.01.0)
+  posn : object? = (position 0.0 0.0 0.0)
+  rota : object? = (rotation 0.0 0.0 0.0)
+  scale : object? = (make-scale 1.0 1.0 1.0)
   preset : (or/c 'default 'dust 'snow 'rain) = 'default
   img : (or/c #f h:image?) = #f
   size : (or/c #f real?) = #f
